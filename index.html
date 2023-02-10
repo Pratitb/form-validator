@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Form Validator</title>
+</head>
+<body>
+    <div class="container">
+        <p class="page_heading">Form w validation</p>
+        <form id="form" class="form" autocomplete="off">
+            <p class="form_heading">Register here!</p>
+            <!-- username -->
+            <div class="form_control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter a new username" autocomplete="off">
+                <p class="error_message">error message</p>
+            </div>
+            <!-- email -->
+            <div class="form_control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter a new email">
+                <p class="error_message">error message</p>
+            </div>
+            <!-- password -->
+            <div class="form_control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter a new password">
+                <p class="error_message">error message</p>
+            </div>
+            <!-- confirm-password -->
+            <div class="form_control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Re-enter password">
+                <p class="error_message">error message</p>
+            </div>
+            <button type="submit">Done</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
